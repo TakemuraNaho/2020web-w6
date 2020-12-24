@@ -34,8 +34,8 @@
     'use strict';
 
     const num = 10;
-    const daikichi = Math.floor(Math.random() * num); // 0 - 4
-    const chukichi = Math.floor(Math.random() * num); 
+    const daikichi = Math.floor(Math.random() * (num-2)); // 0 - 4
+    const chukichi = Math.floor(Math.random() * (num-1)); 
     const shokichi = Math.floor(Math.random() * num); 
     
     for (let i = 0; i < num; i++) {
