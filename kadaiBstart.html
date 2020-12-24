@@ -35,9 +35,9 @@
 
     const num = 10;
     const daikichi = Math.floor(Math.random() * num); // 0 - 4
-    const chukichi = Math.floor(Math.random() * num); 
-    const shokichi = Math.floor(Math.random() * num); 
-    const kyo = Math.floor(Math.random() * num); 
+    const chukichi = Math.floor(Math.random() * num*2); 
+    const shokichi = Math.floor(Math.random() * num*3); 
+    
     for (let i = 0; i < num; i++) {
       const div = document.createElement('div');
       div.classList.add('box');
@@ -52,7 +52,7 @@
         }else if(i==shokichi){
           div.textContent = '小吉';
           div.classList.add('shokichi');
-        }else if(i==kyo){
+        }else {
           div.textContent = '凶';
           div.classList.add('kyo');
         }
